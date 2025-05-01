@@ -1,1 +1,32 @@
-This project will conduct 3 different codes....
+This project follows a structured three-step data analysis pipeline using the Rogensburg Pediatric Appendicitis dataset. In Milestone 1 (Preprocessing), the raw dataset was cleaned by assigning proper data types, handling missing values, and preparing it for analysis. In Milestone 2 (EDA), we explored the dataset visually and statistically to identify patterns, detect outliers, and understand correlations among features. Finally, in Milestone 3 (PCA), we applied Principal Component Analysis to reduce dimensionality, selecting five principal components that retained most of the data’s variance. These steps ensure the dataset is well-prepared for predictive modeling in the final stage.
+
+Milestone 1 – Preprocessing (Milestone1 (Preprocessing).ipynb)
+This notebook focuses on preparing the dataset for analysis and modeling. It includes:
+
+Loading the raw dataset
+Converting data types (categorical vs. numerical)
+Handling missing values using mode (for categoricals) and mean (for numericals)
+Performing basic data cleaning and verification
+Saving the cleaned dataset for use in future steps
+
+✅ Outcome: A fully cleaned dataset saved as cleaned_dataset.csv.
+
+Milestone 2 – Exploratory Data Analysis (EDA) (Milestone 2 (EDA).ipynb)
+This notebook explores the cleaned data to extract insights and understand patterns:
+
+Visualizes key categorical features using pie and bar charts (e.g., Diagnosis, Severity)
+Uses boxplots to identify potential outliers in numerical variables
+Generates a correlation heatmap for numerical features
+Helps understand feature relationships and target distribution before modeling
+
+✅ Outcome: Key patterns and correlations discovered to guide feature selection.
+
+Milestone 3 – PCA Dimensionality Reduction (Milestone 3 (PCA).ipynb)
+This section applies Principal Component Analysis (PCA) to reduce feature dimensionality:
+
+Standardizes numerical features using Z-score normalization
+Computes and plots cumulative explained variance to determine optimal number of components
+Selects 5 principal components for further use
+Transforms the dataset into a lower-dimensional representation for model input
+
+✅ Outcome: A reduced-feature dataset using PCA, retaining essential information.
